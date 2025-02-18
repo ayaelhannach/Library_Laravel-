@@ -1,0 +1,167 @@
+/* Container */
+.container {
+    margin-top: 50px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 800px; /* Limiter la largeur du conteneur */
+    margin-left: auto; /* Centrer le conteneur horizontalement */
+    margin-right: auto; /* Centrer le conteneur horizontalement */
+    margin-bottom: 30px;
+}
+h2{
+    text-align: center;
+    
+}
+
+/* Table */
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.table-bordered {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+/* Table header */
+.table th {
+    background-color: rgb(184, 165, 128);
+    color: #fff;
+    padding: 15px;
+    text-align: left;
+    font-size: 18px; /* Augmenter la taille de l'écriture */
+    font-weight: bold;
+}
+
+/* Table cells */
+.table td {
+    padding: 15px;
+    text-align: left;
+    font-size: 16px; /* Augmenter la taille de l'écriture */
+    color: #555;
+}
+
+/* Table rows hover */
+.table tbody tr:hover {
+    background-color: #f1f1f1;
+}
+
+/* Buttons */
+.btn {
+    border-radius: 20px;
+    font-weight: bold;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    font-size: 16px; /* Augmenter la taille des boutons */
+    transition: all 0.3s ease;
+}
+
+.btn-warning {
+    background-color: rgb(37, 162, 37);
+    text-decoration: none;
+    color: white;
+    margin-left: 50px;
+}
+
+.btn-warning:hover {
+    background-color: green;
+}
+
+.btn-danger {
+    background-color: red;
+    color: white;
+    margin-left: 50px;
+    border: red;
+}
+
+.btn-danger:hover {
+    background-color: red;
+}
+
+/* Alert */
+.alert {
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+
+.alert-success {
+    
+    color: black;
+}
+
+
+
+
+
+
+
+
+/* Form labels */
+.form-label {
+    font-size: 16px;
+    color: #333;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+/* Form input fields */
+.form-control {
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: 100%;
+    margin-bottom: 15px;
+    transition: all 0.3s ease;
+}
+
+.form-control:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+/* Submit button */
+.btn-primary {
+    background-color: rgb(37, 162, 37);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    width: 100%;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color:green;
+}
+
+/* Add spacing between form sections */
+.mb-3 {
+    margin-bottom: 20px;
+}
+
+/* Styling for heading */
+h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 30px;
+    font-size: 24px;
+}
+
+
+
+
+
+
+
+
+
+

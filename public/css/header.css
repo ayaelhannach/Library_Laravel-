@@ -1,0 +1,170 @@
+/* Header */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color:white;
+  padding: 15px 30px;
+  color: rgb(255, 255, 255);
+  box-shadow: 0 4px 10px rgb(8, 127, 191);
+  transition: all 0.3s ease-in-out;
+}
+
+.header:hover {
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Logo */
+.logo {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.logo:hover {
+  transform: scale(1.05);
+}
+
+.logo img {
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
+  border-radius: 50%;
+}
+
+.logo h1 {
+  font-size: 25px;
+  font-weight: 900;
+  font-style: italic;
+  color: #2c3e50;
+  letter-spacing: 0.5px;
+  transition: color 0.3s ease;
+}
+
+.logo h1:hover {
+  color: rgb(8, 127, 191);
+}
+
+/* Navigation Links */
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 60px;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links li {
+  position: relative;
+  transition: transform 0.3s ease;
+}
+
+.nav-links li:hover {
+  transform: translateY(-2px);
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: black;
+  font-size: 20px;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: rgb(8, 127, 191);
+}
+
+/* Dropdown */
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: white;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+  min-width: 160px;
+  z-index: 1;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  opacity: 0;
+  transform: translateY(10px);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.dropdown-menu li {
+  padding: 10px;
+}
+
+.dropdown-menu li a {
+  color: #036280;
+  font-weight: 400;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+.dropdown-menu li a:hover {
+  background-color: rgb(8, 127, 191);
+  color: white;
+}
+
+/* Auth Buttons */
+.auth-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+/* Buttons (Admin, Logout, Login, Register) */
+.auth-buttons a {
+  background-color: #036280;
+  border: 2px solid #036280;
+  color: white;
+  padding: 8px 15px;
+  font-size: 14px;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+
+.auth-buttons a:hover {
+  background-color: rgb(199, 168, 128);
+  border-color: rgb(199, 168, 128);
+  color: white;
+  transform: scale(1.05);
+}
+
+/* Favorites Badge */
+.favorites-badge {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  margin-left: 20px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.favorites-badge:hover {
+  transform: scale(1.1);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .nav-links {
+      display: none;
+  }
+  .auth-buttons {
+      display: none;
+  }
+  .logo h1 {
+      font-size: 20px;
+  }
+}

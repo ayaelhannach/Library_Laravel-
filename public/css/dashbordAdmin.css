@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+.dashboard {
+    background-color: #f4f4f9;
+    padding: 40px;
+    font-family: 'Poppins', sans-serif;
+    color: #333;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 1200px;
+    margin: 50px auto;
+    animation: fadeIn 1s ease-out;
+}
+
+.dashboard h2 {
+    font-size: 28px;
+    text-align: center;
+    color: #036280;
+    margin-bottom: 40px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.stats-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    padding: 20px;
+}
+
+.chart-card {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    animation: slideInUp 0.5s ease-out;
+    max-width: 400px;
+    width: 100%;
+}
+
+.chart-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.chart-card h3 {
+    font-size: 24px;
+    color: #036280;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes slideInUp {
+    from {
+        transform: translateY(30px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* Centered PDF Button with elegant design */
+.btn-pdf-container {
+    display: flex;
+    justify-content: center; /* Centers the button horizontally */
+    align-items: center; /* Centers the button vertically */
+    height: 100vh; /* Full height of the viewport */
+    margin-top: 0; /* Remove any margin-top to allow full vertical centering */
+}
+
+.btn-pdf {
+    background-color: #036280; /* Elegant blue color */
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    cursor: pointer;
+    border-radius: 12px; /* Rounded corners for a more refined look */
+    font-size: 20px; /* Slightly larger text */
+    font-weight: 600;
+    transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15); /* Soft shadow */
+}
+
+.btn-pdf:hover {
+    background-color: #2980b9; /* Darker blue for hover effect */
+    transform: translateY(-3px); /* Slight upward movement on hover */
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2); /* Stronger shadow on hover */
+}
+
+.btn-pdf:active {
+    transform: translateY(1px); /* Slight downward movement when clicked */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Reduced shadow on active state */
+}

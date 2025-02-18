@@ -1,0 +1,178 @@
+/* Navbar Styling */
+.navbarNav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #036280;
+    padding: 15px 60px;
+    box-shadow: 0 1px 2px rgb(8, 127, 191);
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+.logoNav {
+    display: flex;
+    align-items: center;
+    margin-right: 80px;
+}
+
+
+.logoNav img {
+    width: 60px;
+    height: 60px;
+    margin-right: 20px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.logoNav img:hover {
+    transform: scale(1.1);
+}
+
+.logoNav h1 {
+    font-size: 24px;
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+    letter-spacing: 1px;
+    margin: 0;
+    padding-right: 100px;
+}
+
+.navbarNav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    animation: fadeIn 0.6s ease-in-out;
+    flex-grow: 1;
+    justify-content: flex-start;
+}
+
+.navbarNav ul li {
+    margin-right: 50px;
+    position: relative;
+    padding: 5px;
+}
+
+.navbarNav ul li a {
+    text-decoration: none;
+    color:white;
+    font-size: 20px;
+    cursor: pointer;
+    transition: color 0.3s ease, transform 0.3s ease;
+    margin: 10px;
+}
+
+.navbarNav ul li a:hover {
+    color: #083265;
+    transform: scale(1.1);
+}
+
+/* Dropdown Menu Styling */
+.dropdownNav {
+    position: relative;
+    padding: 10px;
+    animation: fadeIn 0.6s ease-in-out;
+
+}
+
+/* Le menu déroulant est caché par défaut */
+.dropdown-menuNav {
+    display: none; /* Menu caché par défaut */
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #036280;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+    z-index: 10;
+    padding: 10px 0;
+    animation: slideDown 0.3s ease-in-out;
+}
+
+
+
+/* Afficher le menu déroulant au survol du parent */
+.dropdownNav:hover .dropdown-menuNav{
+    display: block; /* Menu affiché au survol */
+}
+
+.dropdown-menuNav li {
+    margin: 0;
+}
+
+.dropdown-menuNav li a {
+    display: block;
+    padding: 14px 30px;
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 600;
+    transition: transform 0.3s ease;
+}
+
+.dropdown-menuNav li a:hover {
+    color: #00bcd4;
+    transform: scale(1.05);
+}
+
+/* Section profil */
+.profile-sectionNav {
+    display: flex;
+    align-items: center;
+    animation: slideInRight 0.5s ease-out;
+    margin-left: 80px;
+}
+
+.profile-linkNav {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color:white;
+    font-size: 18px;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.profile-linkNav:hover {
+    color: #00bcd4;
+}
+
+.profile-iconNav {
+    margin-right: 15px;
+}
+
+.profile-textNav {
+    font-weight: bold;
+}
+
+.admin-nameNav {
+    font-size: 18px;
+    color: white;
+    margin-left: 15px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes slideInLeft {
+    from { transform: translateX(-100%); }
+    to { transform: translateX(0); }
+}
+
+@keyframes slideInRight {
+    from { transform: translateX(100%); }
+    to { transform: translateX(0); }
+}
+
+@keyframes slideDown {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
